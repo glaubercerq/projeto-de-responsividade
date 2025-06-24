@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+:root {
+    --discord-purple: #5865F2;
+    --discord-dark-blue: #404EED;
+    --discord-gray-background: #F6F6F6;
+    --discord-dark-text: #23272A;
+    --discord-light-text: #FFFFFF;
+    --discord-grey-text: #72767D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif; /* Primary font for body text */
+    line-height: 1.6;
+    color: var(--discord-dark-text);
+    background-color: var(--discord-gray-background);
+}
+
+h1, h2 {
+    font-family: 'Whitney', sans-serif; /* Heading font */
+    font-weight: 700;
+    color: var(--discord-dark-text);
+}
+
+p {
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap; /* Prevent text wrap on small buttons */
+}
+
+/* Header/Hero Section */
+.hero {
+    background: url('../img/imagem-header.png') no-repeat center center / contain; /* Mobile background */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero-content h1 {
+
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--discord-light-text);
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+    align-items: center;
+}
+
+.btn-download {
+    background-color: var(--discord-light-text);
+    color: var(--discord-dark-text);
+}
+
+.btn-download:hover {
+    color: var(--discord-purple);
+}
+
+.btn-download .download-icon {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.btn-browser {
+    background-color: var(--discord-dark-text);
+    color: var(--discord-light-text);
+}
+
+.btn-browser:hover {
+    background-color: #36393f; /* Slightly lighter dark */
+}
+
+/* Main Sections */
+.section {
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section:nth-child(even) {
+    background-color: var(--discord-light-text);
+}
+
+.section-image {
+    width: 100%;
+}
+
+.section-content {
+    max-width: 500px;
+}
+
+.section-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.section-content p {
+    font-size: 1rem;
+    color: var(--discord-dark-text);
+}
+
+/* Specific Section Adjustments */
+.reliable-tech {
+    padding-bottom: 80px; /* More padding at bottom */
+}
+
+.reliable-tech h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.reliable-tech p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+.reliable-tech-image {
+    width: 100%;
+}
+
+
+
+.footer {
+    background-color: #23272A;
+    padding: 20px;
+    justify-items: center;
+}
+
+.footer-logo {
+    width: 120px; 
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+/* Desktop Styles */
+@media (min-width: 780px) {
+    .hero {
+        background: url('../img/imagem-header.png')  no-repeat center  center / cover; /* Desktop background */
+        height: 370px;
+    
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        width: 600px; 
+        left: 261px;
+
+    }
+
+    .hero-content h1 {
+        width: 313px;
+        height: 112px;
+        font-family: "Luckiest Guy", cursive;
+        font-style: normal;
+        font-weight: 400px;
+        font-size: 56px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        color: #FFFFFF;
+
+    }
+
+    .hero-content p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400px;
+        font-size: 13px;
+        text-align: center;
+        color: #FFFFFF;
+
+
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    
+
+    .section {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .section-space {
+        display:grid;
+        margin: 20px 80px 20px 80px ;
+        grid-template-columns: 1.8fr 1.1fr;
+    }
+
+    .section-content {
+        color: #23272A;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        margin-left: 5px ;
+        margin-top: 2px;
+        margin-bottom: 2px;
+
+    }
+
+    .section-content h2 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800px;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+    }
+
+    .section-content p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+
+    .reverse-order {
+        flex-direction: row-reverse; 
+        padding: 10px 100px 10px 100px;
+
+    }
+    
+    .reverse-order .section-content {
+        width: 30em;
+
+    }
+
+    .reverse-order .section-content h2 {
+        font-size: 40px;
+        color: #23272A;
+        margin-right: 20px;
+        font-family: "Open Sans", sans-serif;
+
+    }
+    
+    .reverse-order .section-content p {
+        font-size: 16px;
+        color: #23272A;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .for-few-many .section-content {
+        width: 300px;
+    }
+
+    .for-few-many .section-content h2 {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 800px;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #23272A;
+        margin-right: 10px;
+    }
+
+    .for-few-many .section-content p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+
+
+    }
+    
+    .for-few-many .section-image {
+        margin-left: 90px;
+        width: 500px;
+    }
+    
+
+
+    .reliable-tech {
+        background-color: #F6F6F6;
+        gap: 16px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        padding-top: 40px;
+        text-align: center;
+        flex-direction: column; 
+        max-width: 100%;
+    }
+
+    .reliable-tech h2 {
+        width: 608px;
+        height: 80px;
+        font-family: Luckiest Guy;
+        font-weight: 400px;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+
+    }
+
+    .reliable-tech p {
+        width: 802px;
+        height: 44px;
+        font-family: Open Sans;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+
+    }
+
+    .reliable-tech-image {
+        width: 784px;
+        height: 508px;
+
+
+    }
+}
+
+@media (max-width: 780px) {
+    
+    .hero {
+        background: url('../img/imagem-header.png') no-repeat center center / cover;
+    }
+
+
+    .hero-content{
+        width: 428px;
+        height: 366px;
+        margin-top: 69px;
+        gap: 24px;
+        padding: 2px 50px 10px 50px;
+
+    }
+
+    .hero-content h1 {
+        width: 278px;
+        height: 64px;
+        font-family: Luckiest Guy;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #FFFFFF;
+        text-align: start;
+
+    }
+
+    .hero-content p {
+        color: #FFFFFF;
+        font-family: Open Sans;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: start;
+        margin-bottom: 30px;
+
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+
+    }
+
+    .btn-download {
+        font-family: Open Sans;
+        font-weight: 400px;
+        font-size: 16pxpx;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+        color: #23272A;
+        width: 100%;        
+        background-color: #FFFFFF;
+
+
+    }
+
+    .btn-download:hover {
+        color: var(--discord-purple);
+    }
+
+    .btn-download .download-icon {
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .btn-browser {
+        background-color: #23272A;
+        color: #FFFFFF;
+        width: 100%; 
+        font-family: Open Sans;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+       
+
+    }
+
+    .btn-browser:hover {
+        background-color: #36393f; /* Slightly lighter dark */
+    }
+    
+    .section {
+        flex-direction: column;
+        
+    }
+
+    .section-space {
+        top: 505px;
+        gap: 27px;
+       
+    }
+
+    
+    .section-content {
+        color: #23272A;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        margin: 20px;
+
+    }
+
+    .section-content h2 {
+        font-family: Open Sans;
+        font-weight: 800px;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color:  #23272A;
+        
+
+
+    }
+
+    .section-content p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-top: 20px;
+    }
+
+    .reverse-order {
+        top: 505px;
+        gap: 27px;
+       background-color: #F6F6F6;
+    }
+
+    
+    .reverse-order .section-content {
+        color: #23272A;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        margin: 20px;
+
+    }
+
+    .reverse-order .section-content h2 {
+        font-family: Open Sans;
+        font-weight: 800px;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color:  #23272A;
+        
+
+
+    }
+
+    .reverse-order .section-content p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-top: 20px;
+    }
+
+
+    .for-few-many {
+        top: 505px;
+        gap: 27px;
+    }
+
+    
+    .for-few-many .section-content {
+        color: #23272A;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        margin: 20px;
+
+    }
+
+    .for-few-many .section-content h2 {
+        font-family: Open Sans;
+        font-weight: 800px;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color:  #23272A;
+        
+
+
+    }
+
+    .for-few-many .section-content p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-top: 20px;
+    }
+
+    
+   
+    
+
+
+    .reliable-tech {
+        background-color: #F6F6F6;
+        gap: 16px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        padding-top: 40px;
+        text-align: center;
+        flex-direction: column; 
+        max-width: 100%;
+    }
+
+    .reliable-tech h2 {
+
+        font-family: Luckiest Guy;
+        font-weight: 400px;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+
+    }
+
+    .reliable-tech p {
+        font-family: Open Sans;
+        font-weight: 400px;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: left;
+
+    }
+
+    .reliable-tech-image {
+        width: 379px;
+        height: 252px;
+
+
+    }
+}
