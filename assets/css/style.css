@@ -18,14 +18,14 @@
 }
 
 body {
-    font-family: 'Noto Sans', sans-serif; /* Primary font for body text */
+    font-family: 'Noto Sans', sans-serif;
     line-height: 1.6;
     color: var(--discord-dark-text);
     background-color: var(--discord-gray-background);
 }
 
 h1, h2 {
-    font-family: 'Whitney', sans-serif; /* Heading font */
+    font-family: 'Whitney', sans-serif;
     font-weight: 700;
     color: var(--discord-dark-text);
 }
@@ -54,12 +54,12 @@ a {
     font-weight: 700;
     font-size: 1rem;
     transition: background-color 0.3s ease, color 0.3s ease;
-    white-space: nowrap; /* Prevent text wrap on small buttons */
+    white-space: nowrap; 
 }
 
-/* Header/Hero Section */
+
 .hero {
-    background: url('../img/imagem-header.png') no-repeat center center / contain; /* Mobile background */
+    background: url('../img/imagem-header.png') no-repeat center center / contain; 
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -108,10 +108,10 @@ a {
 }
 
 .btn-browser:hover {
-    background-color: #36393f; /* Slightly lighter dark */
+    background-color: #36393f; 
 }
 
-/* Main Sections */
+
 .section {
     padding: 20px 20px;
     text-align: center;
@@ -143,9 +143,9 @@ a {
     color: var(--discord-dark-text);
 }
 
-/* Specific Section Adjustments */
+
 .reliable-tech {
-    padding-bottom: 80px; /* More padding at bottom */
+    padding-bottom: 80px;
 }
 
 .reliable-tech h2 {
@@ -177,10 +177,10 @@ a {
     filter: brightness(0) invert(1);
 }
 
-/* Desktop Styles */
+
 @media (min-width: 780px) {
     .hero {
-        background: url('../img/imagem-header.png')  no-repeat center  center / cover; /* Desktop background */
+        background: url('../img/imagem-header.png')  no-repeat center  center / cover; 
         height: 370px;
     
     }
@@ -456,7 +456,7 @@ a {
     }
 
     .btn-browser:hover {
-        background-color: #36393f; /* Slightly lighter dark */
+        background-color: #36393f; 
     }
     
     .section {
